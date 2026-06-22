@@ -1,0 +1,33 @@
+import './style.css'
+import { initLayout } from './layout.js'
+import { initQuoteForm } from './quote-form.js'
+
+initLayout()
+initQuoteForm()
+
+const header = document.getElementById('site-header')
+const menuToggle = document.getElementById('menu-toggle')
+const mobileMenu = document.getElementById('mobile-menu')
+const menuIconOpen = document.getElementById('menu-icon-open')
+const menuIconClose = document.getElementById('menu-icon-close')
+
+function setMenuOpen(open) {
+  if (!mobileMenu || !menuToggle) return
+  mobileMenu.classList.toggle('hidden', !open)
+  menuToggle.setAttribute('aria-expanded', String(open))
+  menuIconOpen?.classList.toggle('hidden', open)
+  menuIconClose?.classList.toggle('hidden', !open)
+}
+
+menuToggle?.addEventListener('click', () => {
+  setMenuOpen(mobileMenu.classList.contains('hidden'))
+})
+
+mobileMenu?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => setMenuOpen(false))
+})
+
+window.addEventListener('scroll', () => {
+  if (!header) return
+  header.classList.toggle('shadow-md', window.scrollY > 8)
+})
