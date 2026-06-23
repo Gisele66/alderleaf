@@ -2,9 +2,10 @@
 interface Props {
   image: string
   imageClass?: string
+  containerClass?: string
 }
 
-const { image, imageClass = '' } = Astro.props
+const { image, imageClass = '', containerClass = '' } = Astro.props
 ---
 
 <section class="page-hero relative overflow-hidden">
@@ -17,7 +18,7 @@ const { image, imageClass = '' } = Astro.props
     decoding="async"
   />
   <div class="hero-overlay absolute inset-0"></div>
-  <div class="site-container page-hero-content relative z-[2]">
+  <div class:list={['site-container', 'page-hero-content', 'relative', 'z-[2]', containerClass]}>
     <slot />
   </div>
 </section>

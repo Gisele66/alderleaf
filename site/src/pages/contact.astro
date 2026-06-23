@@ -15,7 +15,8 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   </section>
 
   <section class="py-16 lg:py-20">
-    <div class="site-container grid gap-12 lg:grid-cols-2 lg:gap-16">
+    <div class="site-container">
+      <div class="grid gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
       <div class="space-y-8">
         <div>
           <h2 class="text-2xl font-bold">Call us</h2>
@@ -39,7 +40,8 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         </div>
         <a href="/quote" class="inline-flex rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent/90">Request a Free Quote</a>
       </div>
-      <img src="/images/20220709_090309.jpg" alt="Alderleaf on Haida Gwaii" class="rounded-2xl object-cover shadow-xl lg:min-h-[32rem]" width="1200" height="1600" loading="lazy" />
+      <img src="/images/20220709_090309.jpg" alt="Alderleaf on Haida Gwaii" class="w-full rounded-2xl object-cover shadow-xl lg:min-h-[32rem]" width="1200" height="1600" loading="lazy" />
+      </div>
     </div>
   </section>
 </BaseLayout>

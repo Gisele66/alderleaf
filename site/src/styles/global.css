@@ -81,7 +81,7 @@ h4 {
 
 .site-container {
   width: 100%;
-  max-width: 72rem;
+  max-width: 1920px;
   margin-inline: auto;
   padding-inline: 1.25rem;
 }
@@ -101,6 +101,16 @@ h4 {
 @media (min-width: 1280px) {
   .site-container {
     padding-inline: 3.25rem;
+  }
+}
+
+.site-container.site-container-page {
+  max-width: 1320px;
+}
+
+@media (min-width: 1024px) {
+  .site-container.site-container-page {
+    padding-inline: 2rem;
   }
 }
 
@@ -314,8 +324,8 @@ h4 {
   align-items: center;
   column-gap: 0.875rem;
   row-gap: 0.75rem;
-  min-height: 5.5rem;
-  padding-block: 1.25rem;
+  min-height: 6rem;
+  padding-block: 1.5rem;
 }
 
 .site-header-logo {
@@ -337,9 +347,9 @@ h4 {
 
 @media (min-width: 1024px) {
   .site-header-grid {
-    min-height: 6.75rem;
-    padding-block: 1.2rem;
-    column-gap: 1.125rem;
+    min-height: 9rem;
+    padding-block: 2rem;
+    column-gap: 1.5rem;
   }
 }
 
@@ -385,19 +395,20 @@ h4 {
 }
 
 .site-logo {
-  height: 4.25rem;
+  height: 4.75rem;
   width: auto;
+  filter: drop-shadow(0 0 0.75px rgba(29, 122, 32, 0.45));
 }
 
 @media (min-width: 640px) {
   .site-logo {
-    height: 4.75rem;
+    height: 5.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .site-logo {
-    height: 5.5rem;
+    height: 8rem;
   }
 }
 
@@ -438,7 +449,7 @@ h4 {
 
 @media (min-width: 1024px) {
   .nav-link {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -468,8 +479,8 @@ h4 {
   justify-content: center;
   border-radius: 0.5rem;
   background-color: var(--color-forest);
-  padding: 0.875rem 1.75rem;
-  font-size: 1.0625rem;
+  padding: 1rem 2.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: white;
   box-shadow: 0 4px 14px rgb(29 122 32 / 0.35);
