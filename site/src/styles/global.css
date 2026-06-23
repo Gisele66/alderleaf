@@ -41,7 +41,34 @@ h4 {
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -12px rgb(18 50 8 / 0.15);
+  box-shadow: 0 20px 40px -12px rgb(18 50 8 / 0.2);
+}
+
+.service-item-photo {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 28px -12px rgb(18 50 8 / 0.18);
+}
+
+.service-item-photo img {
+  display: block;
+  border-radius: 1rem;
+  transition: transform 0.35s ease;
+}
+
+.service-item-copy {
+  margin-top: 1.25rem;
+}
+
+.service-card-image {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-card-image-lighten {
+  filter: brightness(1.2) contrast(1.05) saturate(1.08);
 }
 
 .hero-overlay {
