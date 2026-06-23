@@ -1,16 +1,22 @@
 {
   "name": "alderleaf",
-  "version": "0.0.0",
-  "private": true,
   "type": "module",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "assets:download": "node scripts/download-images.mjs"
+  },
+  "dependencies": {
+    "@fontsource/chivo": "^5.2.5",
+    "@fontsource/libre-baskerville": "^5.2.5",
+    "astro": "^5.7.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.1",
     "tailwindcss": "^4.3.1",
-    "vite": "^8.0.12"
+    "typescript": "^5.8.0"
   }
 }

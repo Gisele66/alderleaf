@@ -2,6 +2,75 @@
 
 This project is for https://alderleaf.ca/.
 
+## Local Development
+
+The live site code lives in `site/` (Astro).
+
+After any change that affects how the site looks or behaves, **always run the local dev server** so Gisele can preview it in the browser. Do not only run a build — start dev unless she asks otherwise.
+
+**Commands** (run from `site/`):
+
+```bash
+npm run dev
+```
+
+Default URL: **http://localhost:4321**
+
+If a dev server is already running on that port, restart it when changes may not show up (stop with Ctrl+C, then run `npm run dev` again).
+
+Use `npm run build` and `npm run preview` only when checking the production build — not as a substitute for dev during normal work.
+
+## Project Storage and Cleanup
+
+### Where the project should live
+
+Keep active code in a **local folder** (for example `C:\Dev\Alderleaf`), not in OneDrive.
+
+Use **GitHub** for backup and sharing. Do not rely on OneDrive to sync `node_modules` or build folders — installs and cleanups create thousands of file changes and trigger delete/sync warnings.
+
+### Why there are thousands of files
+
+Most files in `site/` are **`node_modules`** — npm packages needed to run Astro and Tailwind. They are normal, not Cursor junk, and not part of the live website.
+
+Rough guide for this project:
+
+| Folder | Keep? | Notes |
+| --- | --- | --- |
+| `src/` | Yes | The real site code |
+| `public/` | Yes | Images and static files |
+| `package.json`, `package-lock.json` | Yes | Dependency list |
+| `astro.config.mjs`, `tsconfig.json` | Yes | Project config |
+| `node_modules/` | Regeneratable | ~200+ MB, ~10,000+ files. Delete anytime; restore with `npm install` |
+| `dist/` | Regeneratable | Build output. Restore with `npm run build` |
+| `.astro/` | Regeneratable | Dev cache. Recreated automatically |
+
+Git already ignores `node_modules/`, `dist/`, and `.astro/` — they are not pushed to GitHub.
+
+### Safe cleanup (from `site/`)
+
+```bash
+# Remove regeneratable folders to free disk space (~240 MB for this project)
+Remove-Item -Recurse -Force node_modules, dist, .astro -ErrorAction SilentlyContinue
+
+# Restore when working again
+npm install
+npm run dev
+```
+
+Deleting those folders is safe. Nothing important is lost if GitHub has the latest code and `package-lock.json` is committed.
+
+### OneDrive “Delete these items?” dialog
+
+If OneDrive asks about deleting hundreds or thousands of items (`README.md`, `package.json`, `node_modules`, etc.):
+
+- These are **project files**, not Cursor files.
+- Choose **Keep items** unless you intentionally want the project removed from OneDrive online.
+- To avoid this in future, move the project out of OneDrive and use GitHub instead.
+
+### Recycle Bin
+
+After deleting `node_modules` or other folders locally, empty the **Recycle Bin** if you want the disk space back immediately.
+
 ## Core Working Rules
 
 Use simple, plain language.

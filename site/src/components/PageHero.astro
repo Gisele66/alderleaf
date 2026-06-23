@@ -1,0 +1,23 @@
+---
+interface Props {
+  image: string
+  imageClass?: string
+}
+
+const { image, imageClass = '' } = Astro.props
+---
+
+<section class="page-hero relative overflow-hidden">
+  <img
+    src={image}
+    alt=""
+    class:list={['absolute inset-0 h-full w-full object-cover', imageClass]}
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+  />
+  <div class="hero-overlay absolute inset-0"></div>
+  <div class="site-container page-hero-content relative z-[2]">
+    <slot />
+  </div>
+</section>

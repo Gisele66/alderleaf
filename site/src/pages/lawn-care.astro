@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+---
+
+<BaseLayout
+  title="Lawn Care — Alderleaf"
+  description="Professional lawn care on Haida Gwaii — bi-weekly mowing, yard clean-ups, and turf care."
+  activePage="lawn-care"
+  heroImage="/images/Lawn-Care.jpg"
+>
+  <PageHero image="/images/Lawn-Care.jpg">
+    <h1 class="hero-heading">Professional Lawn Care on Haida Gwaii</h1>
+    <p class="hero-lead">Not just grass cutting, we are quickly becoming Haida Gwaii's number one choice for lawn and turf care.</p>
+    <a href="/quote" class="btn-hero-primary mt-8">Request a Free Quote</a>
+  </PageHero>
+
+  <section class="py-16 lg:py-24">
+    <div class="site-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <h2 class="text-3xl font-normal">Bi-Weekly Lawn Care</h2>
+        <div class="section-divider mt-5"></div>
+        <p class="mt-6 leading-relaxed">In response to local demand, Alderleaf Land and Tree Services added one bi-weekly mowing day to their schedule in Port Clements in 2023 and later included one bi-weekly mowing day south of Port including Tlell, Skidegate and Daajing Giids. We will continue to offer a limited mowing schedule going forward into 2025 with priority given to past customers. Feel free to contact us if you would like to get onto the regular schedule.</p>
+      </div>
+      <img src="/images/Lawn-Care-2.jpg" alt="Lawn care on Haida Gwaii" class="rounded-2xl shadow-xl" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="bg-cream py-16 lg:py-24">
+    <div class="site-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <img src="/images/lawn-sprinklers.jpg" alt="Lawn and irrigation" class="rounded-2xl shadow-xl" loading="lazy" />
+      <div>
+        <h2 class="text-3xl font-normal">Yard Clean-ups</h2>
+        <div class="section-divider mt-5"></div>
+        <p class="mt-6 leading-relaxed">Spring or Fall we can offer a variety of yard and property clean-ups to match your landscape or budget.</p>
+        <h3 class="mt-8 text-xl font-bold">Lawn De-Thatching</h3>
+        <p class="mt-3 leading-relaxed">Including spring and fall cleanups.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

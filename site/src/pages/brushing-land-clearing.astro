@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+---
+
+<BaseLayout
+  title="Brushing / Land Clearing — Alderleaf"
+  description="Residential and commercial land clearing and brushing on Haida Gwaii — small lots to large acreages."
+  activePage="brushing-land-clearing"
+  heroImage="/images/20240430_162038.jpg"
+>
+  <PageHero image="/images/20240430_162038.jpg">
+    <h1 class="hero-heading">Residential &amp; Commercial Clearing and Brushing</h1>
+    <p class="hero-lead">From small backyard brush-clearing to large commercial projects, Alderleaf has experience in the design and execution of a wide-range of multifaceted projects involving specialized machinery and skills.</p>
+    <a href="/quote" class="btn-hero-primary mt-8">Request a Free Quote</a>
+  </PageHero>
+
+  <section class="py-16 lg:py-24">
+    <div class="site-container">
+      <div class="grid gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-normal">Land-Clearing</h2>
+          <div class="section-divider mt-5"></div>
+          <p class="mt-6 leading-relaxed">For both small lots or large acreages we are equipped to clear, process and remove trees and brush from your landscape to facilitate building or other land development.</p>
+        </div>
+        <div>
+          <h2 class="text-3xl font-normal">Brushing</h2>
+          <div class="section-divider mt-5"></div>
+          <p class="mt-6 leading-relaxed">From small backyard brush-clearing to large commercial projects, we bring specialized machinery and skills to every job.</p>
+        </div>
+      </div>
+      <div class="mt-12 grid grid-cols-2 gap-3 md:grid-cols-3">
+        <img src="/images/20220422_095109.jpg" alt="Land clearing project" class="rounded-xl object-cover shadow-md" loading="lazy" />
+        <img src="/images/20220424_102637.jpg" alt="Brushing work" class="rounded-xl object-cover shadow-md" loading="lazy" />
+        <img src="/images/IMG_1955.jpg" alt="Clearing equipment" class="rounded-xl object-cover shadow-md" loading="lazy" />
+        <img src="/images/20220424_102807.jpg" alt="Land development clearing" class="rounded-xl object-cover shadow-md" loading="lazy" />
+        <img src="/images/tree_removal-1.jpg" alt="Tree and brush removal" class="col-span-2 rounded-xl object-cover shadow-md md:col-span-1" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-forest-dark py-16 text-white lg:py-20">
+    <div class="site-container">
+      <h2 class="text-3xl font-normal text-white">Professional</h2>
+      <div class="mt-5 h-1 w-20 bg-forest-light"></div>
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Over 25 years in the industry</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Certified B.C. Faller</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Danger Tree Assessment for Parks and Recreation</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Level 3 First Aid</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

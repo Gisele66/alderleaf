@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+  title="Services — Alderleaf"
+  description="Alderleaf services — tree removal, land clearing, pruning, wood chipping, lawn care, and property maintenance on Haida Gwaii."
+  activePage="services"
+>
+  <section class="bg-cream py-20 lg:py-32">
+    <div class="site-container text-center">
+      <h1 class="text-4xl font-normal sm:text-5xl lg:text-6xl">Services</h1>
+      <div class="section-divider mx-auto mt-5"></div>
+      <p class="mx-auto mt-6 max-w-3xl text-lg leading-relaxed">Professional land and tree services for residential and commercial properties across Haida Gwaii.</p>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-24">
+    <div class="site-container">
+      <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <a href="/removal" class="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:shadow-lg">
+          <img src="/images/Land-Clearing.jpg" alt="Tree removal" class="h-52 w-full object-cover transition group-hover:scale-[1.02] lg:h-56" loading="lazy" />
+          <div class="p-6"><h2 class="text-xl font-bold">Tree Removal</h2><p class="mt-2 text-slate">Safe take-down and removal in limited spaces.</p></div>
+        </a>
+        <a href="/brushing-land-clearing" class="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:shadow-lg">
+          <img src="/images/20240430_162038.jpg" alt="Land clearing" class="h-52 w-full object-cover transition group-hover:scale-[1.02] lg:h-56" loading="lazy" />
+          <div class="p-6"><h2 class="text-xl font-bold">Brushing / Land Clearing</h2><p class="mt-2 text-slate">Residential and commercial clearing projects.</p></div>
+        </a>
+        <a href="/pruning" class="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:shadow-lg">
+          <img src="/images/Tree-Removal-2.jpg" alt="Tree pruning" class="h-52 w-full object-cover transition group-hover:scale-[1.02] lg:h-56" loading="lazy" />
+          <div class="p-6"><h2 class="text-xl font-bold">Tree Pruning and Shrub Trimming</h2><p class="mt-2 text-slate">Hedges, shrubs, and ornamental pruning.</p></div>
+        </a>
+        <a href="/chips" class="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:shadow-lg">
+          <img src="/images/Woodchipping.jpg" alt="Wood chipping" class="h-52 w-full object-cover transition group-hover:scale-[1.02] lg:h-56" loading="lazy" />
+          <div class="p-6"><h2 class="text-xl font-bold">Firewood, Wood-Chipping &amp; Mulch</h2><p class="mt-2 text-slate">Chipping services and mulch delivery.</p></div>
+        </a>
+        <a href="/lawn-care" class="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:shadow-lg">
+          <img src="/images/Lawn-Care.jpg" alt="Lawn care" class="h-52 w-full object-cover transition group-hover:scale-[1.02] lg:h-56" loading="lazy" />
+          <div class="p-6"><h2 class="text-xl font-bold">Lawn Care</h2><p class="mt-2 text-slate">Bi-weekly mowing and yard clean-ups.</p></div>
+        </a>
+        <a href="/property-maintenance" class="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:shadow-lg">
+          <img src="/images/Property-maintenance2.jpg" alt="Property maintenance" class="h-52 w-full object-cover transition group-hover:scale-[1.02] lg:h-56" loading="lazy" />
+          <div class="p-6"><h2 class="text-xl font-bold">Property Maintenance</h2><p class="mt-2 text-slate">Ongoing landscape and property care.</p></div>
+        </a>
+      </div>
+      <div class="mt-12 text-center">
+        <a href="/quote" class="inline-flex rounded-lg bg-forest px-6 py-3 text-sm font-semibold text-white transition hover:bg-forest-dark">Request a Free Quote</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

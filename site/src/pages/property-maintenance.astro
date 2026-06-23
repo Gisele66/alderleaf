@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+---
+
+<BaseLayout
+  title="Property Maintenance — Alderleaf"
+  description="Property maintenance on Haida Gwaii — landscape care and ongoing property upkeep."
+  activePage="property-maintenance"
+  heroImage="/images/Property-maintenance2.jpg"
+>
+  <PageHero image="/images/Property-maintenance2.jpg">
+    <h1 class="hero-heading">Peace of Mind</h1>
+    <a href="/quote" class="btn-hero-primary mt-8">Request a Free Quote</a>
+  </PageHero>
+
+  <section class="py-16 lg:py-24">
+    <div class="site-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <h2 class="text-3xl font-normal">Whatever needs doing</h2>
+        <div class="section-divider mt-5"></div>
+        <p class="mt-6 leading-relaxed">A beautifully manicured landscape is a symbol of prestige in our culture.</p>
+      </div>
+      <img src="/images/Property-maintenance2.jpg" alt="Property maintenance work" class="rounded-2xl shadow-xl" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="bg-cream py-16 lg:py-24">
+    <div class="site-container">
+      <h2 class="text-3xl font-normal">Commitment to Safety</h2>
+      <div class="section-divider mt-5"></div>
+      <p class="mt-6 max-w-3xl leading-relaxed">Chris and his team are highly skilled in working in confined spaces, and have specialized equipment and training to ensure the safety of buildings, infrastructure, surrounding vegetation and personnel. We can provide a complete cleanup of debris, and transportation and disposal of stems off-site, if desired.</p>
+    </div>
+  </section>
+</BaseLayout>

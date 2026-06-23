@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+import QuoteForm from '../components/QuoteForm.astro'
+---
+
+<BaseLayout
+  title="Request a Free Quote — Alderleaf"
+  description="Request a free quote from Alderleaf Land and Tree Services on Haida Gwaii."
+  activePage="quote"
+  heroImage="/images/IMG_2003.jpg"
+>
+  <PageHero image="/images/IMG_2003.jpg">
+    <h1 class="hero-heading">Request a Free Quote</h1>
+    <p class="hero-lead">Get in touch today — we'll respond as soon as we're able.</p>
+  </PageHero>
+
+  <section class="bg-cream py-20 lg:py-28">
+    <div class="mx-auto max-w-2xl px-5 lg:px-8">
+      <p class="text-sm font-semibold uppercase tracking-widest text-forest">Get in touch today</p>
+      <h2 class="mt-2 text-3xl font-normal">Schedule a Free Quote</h2>
+      <div class="section-divider mt-5"></div>
+      <div class="mt-10">
+        <QuoteForm />
+      </div>
+      <p class="mt-8 text-center text-sm text-slate">Or call <a href="tel:12505578733" class="font-semibold text-forest">1-250-557-TREE (8733)</a> or <a href="tel:12508580525" class="font-semibold text-forest">250-858-0525 (Cell)</a></p>
+    </div>
+  </section>
+</BaseLayout>

@@ -2,6 +2,7 @@
 site/node_modules/
 site/dist/
 site/dist-ssr/
+site/.astro/
 
 # Logs
 logs

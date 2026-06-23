@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
+---
+
+<BaseLayout
+  title="Tree Pruning and Shrub Trimming — Alderleaf"
+  description="Tree pruning and shrub trimming on Haida Gwaii — hedges, ornamental shrubs, and hazard reduction."
+  activePage="pruning"
+  heroImage="/images/Tree-Removal-2.jpg"
+>
+  <PageHero image="/images/Tree-Removal-2.jpg">
+    <h1 class="hero-heading">Hedges &amp; Shrubs</h1>
+    <p class="hero-lead">A well-manicured yard is a sign of prestige in our culture. We have experience trimming hedges and shrubs of varying sizes.</p>
+    <a href="/quote" class="btn-hero-primary mt-8">Request a Free Quote</a>
+  </PageHero>
+
+  <section class="py-16 lg:py-24">
+    <div class="site-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div class="prose-alderleaf leading-relaxed">
+        <p>Hedges and shrubs are ornamental features often found on a residential property. Sometimes natural plants can form a hedge, a local example being salmon berry. Hedges and shrubs can be manicured into shapes and given sharp lines, or trimmed for simple size-reduction for many of the same reasons one would prune trees. Commonly, hedges and shrubs require annual or semi-annual pruning to keep them healthy and flowering well, and, occasionally, taming an overgrown shrub could require several visits over subsequent seasons. Some specialized knowledge and equipment is necessary for certain varieties of hedges and shrubs.</p>
+        <p class="mt-4">Pruning for view enhancement, tree and shrub health or production and also for hazard reduction.</p>
+      </div>
+      <img src="/images/tree_removal-1.jpg" alt="Pruning and trimming work" class="rounded-2xl shadow-xl" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="bg-cream py-16 lg:py-24">
+    <div class="site-container">
+      <h2 class="text-3xl font-normal">Commitment to Safety</h2>
+      <div class="section-divider mt-5"></div>
+      <p class="mt-6 max-w-3xl leading-relaxed">Chris and his team are highly skilled in working in confined spaces, and have specialized equipment and training to ensure the safety of buildings, infrastructure, surrounding vegetation and personnel. We can provide a complete cleanup of debris, and transportation and disposal of stems off-site, if desired.</p>
+      <ul class="mt-10 grid gap-4 sm:grid-cols-2">
+        <li class="flex items-start gap-2 text-ink"><span class="font-bold text-forest">✓</span> Over 25 years in the industry</li>
+        <li class="flex items-start gap-2 text-ink"><span class="font-bold text-forest">✓</span> Certified B.C. Faller</li>
+        <li class="flex items-start gap-2 text-ink"><span class="font-bold text-forest">✓</span> Danger Tree Assessment for Parks and Recreation</li>
+        <li class="flex items-start gap-2 text-ink"><span class="font-bold text-forest">✓</span> Level 3 First Aid</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
