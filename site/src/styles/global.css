@@ -54,7 +54,7 @@ h4 {
 }
 
 .hero-overlay-home {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }
 
@@ -81,7 +81,7 @@ h4 {
 
 .site-container {
   width: 100%;
-  max-width: 90rem;
+  max-width: 72rem;
   margin-inline: auto;
   padding-inline: 1.25rem;
 }
@@ -224,9 +224,11 @@ h4 {
 .hero-home-copy .hero-tagline {
   margin-top: 1rem;
   font-size: 1.1875rem;
+  color: #ffffff;
+  font-weight: 700;
   text-shadow:
     0 1px 3px rgba(0, 0, 0, 0.6),
-    0 4px 12px rgba(0, 0, 0, 0.4);
+    0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
 .hero-home-copy .hero-actions {
@@ -240,9 +242,18 @@ h4 {
 }
 
 .hero-home-copy .btn-hero-secondary {
+  font-size: 1.05rem;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.9);
   text-shadow:
     0 1px 3px rgba(0, 0, 0, 0.6),
     0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hero-home-copy .btn-hero-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-color: #ffffff;
 }
 
 .hero-home-copy .hero-cell-link {
@@ -283,6 +294,11 @@ h4 {
   .hero-home-copy :is(.btn-hero-primary, .btn-hero-secondary) {
     padding: 1.25rem 2.25rem;
     font-size: 1.1875rem;
+  }
+
+  .hero-home-copy .btn-hero-secondary {
+    font-size: 1.05rem;
+    font-weight: 800;
   }
 }
 
