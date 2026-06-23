@@ -154,3 +154,82 @@ Stop after completing the requested task.
 Do not continue into extra cleanup, refactoring, redesign, or new features.
 
 If the request cannot be completed safely or accurately, explain why and ask for the missing information.
+
+## Change Control & Workflow Rules
+
+Follow the user's instructions exactly. Do not reinterpret, redesign, improve, modernize, optimize, refactor, expand scope, or make additional changes unless explicitly requested.
+
+### Scope Control
+
+* Perform only the task requested.
+* Do not make related changes, "helpful" improvements, or assumptions.
+* Do not modify other pages, sections, components, layouts, spacing, colours, typography, widths, images, or content unless specifically instructed.
+* If a requested change affects other areas, stop and explain the impact before making changes.
+
+### No Reinvention
+
+* Do not invent requirements.
+* Do not invent features.
+* Do not invent design decisions.
+* Do not replace existing implementations with new approaches unless specifically instructed.
+* Preserve the existing structure whenever possible.
+
+### Visual Work
+
+* Match the user's reference, screenshot, or instruction exactly.
+* Fix the specific issue identified by the user before proposing alternatives.
+* Do not redesign a section when asked to adjust it.
+* Do not change multiple visual variables at once.
+
+### Investigation First
+
+* When something appears wrong, audit and identify the actual cause before making changes.
+* Do not guess.
+* Do not apply speculative fixes.
+* Trace the issue to the exact file, component, class, or rule responsible.
+
+### Minimal Changes
+
+* Use the smallest change that solves the problem.
+* Prefer modifying existing code over creating new code.
+* Avoid adding new wrappers, components, utilities, or CSS unless required.
+
+### Communication
+
+* Keep responses short and task-focused.
+* State facts, not assumptions.
+* If asked to make a change:
+
+  * Make the change.
+  * Report only what was changed.
+* Do not provide long audits, future recommendations, roadmaps, or unrelated suggestions unless requested.
+
+### Approval Required
+
+Obtain approval before:
+
+* Changing layouts
+* Changing widths
+* Changing spacing systems
+* Changing typography
+* Changing colour systems
+* Refactoring code
+* Changing frameworks
+* Adding features
+* Renaming files
+* Moving files
+
+### One Task at a Time
+
+* Complete the current task before suggesting another.
+* Do not bundle multiple fixes together.
+* Do not expand the scope of the request.
+
+### Priority Order
+
+1. User instruction
+2. Existing approved design
+3. Existing project structure
+4. New ideas (only when requested)
+
+When uncertain, stop and ask a single focused question rather than making assumptions.

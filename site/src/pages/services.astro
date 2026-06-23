@@ -1,19 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHero from '../components/PageHero.astro'
 ---
 
 <BaseLayout
   title="Services — Alderleaf"
   description="Alderleaf services — tree removal, land clearing, pruning, wood chipping, lawn care, and property maintenance on Haida Gwaii."
   activePage="services"
+  heroImage="/images/20240430_162038.jpg"
 >
-  <section class="bg-cream py-20 lg:py-32">
-    <div class="site-container text-center">
-      <h1 class="text-4xl font-normal sm:text-5xl lg:text-6xl">Services</h1>
-      <div class="section-divider mx-auto mt-5"></div>
-      <p class="mx-auto mt-6 text-lg leading-relaxed">Professional land and tree services for residential and commercial properties across Haida Gwaii.</p>
-    </div>
-  </section>
+  <PageHero image="/images/20240430_162038.jpg">
+    <p class="hero-eyebrow">Haida Gwaii, BC</p>
+    <h1 class="hero-heading mt-3">Services</h1>
+    <p class="hero-lead">Professional land and tree services for residential and commercial properties across Haida Gwaii.</p>
+  </PageHero>
 
   <section class="py-16 lg:py-24">
     <div class="site-container">
