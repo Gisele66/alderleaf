@@ -1,10 +1,11 @@
 ---
+import { withBase } from '../utils/path'
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout
-  title="Contact Us — Alderleaf"
-  description="Contact Alderleaf — 1-250-557-TREE (8733), 250-858-0525 (cell), office@alderleaf.ca, Port Clements, Haida Gwaii."
+  title="Contact Us â€” Alderleaf"
+  description="Contact Alderleaf â€” 1-250-557-TREE (8733), 250-858-0525 (cell), office@alderleaf.ca, Port Clements, Haida Gwaii."
   activePage="contact"
 >
   <section class="bg-cream py-20 lg:py-32">
@@ -38,9 +39,9 @@ import BaseLayout from '../layouts/BaseLayout.astro'
             <li>Cheques can be mailed to:<br />P.O. Box 163, Port Clements, B.C., V0T 1R0</li>
           </ul>
         </div>
-        <a href="/quote" class="inline-flex rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent/90">Request a Free Quote</a>
+        <a href={withBase('/quote')} class="inline-flex rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent/90">Request a Free Quote</a>
       </div>
-      <img src="/images/20220709_090309.jpg" alt="Alderleaf on Haida Gwaii" class="w-full rounded-2xl object-cover shadow-xl lg:min-h-[32rem]" width="1200" height="1600" loading="lazy" />
+      <img src={withBase('/images/20220709_090309.jpg')} alt="Alderleaf on Haida Gwaii" class="w-full rounded-2xl object-cover shadow-xl lg:min-h-[32rem]" width="1200" height="1600" loading="lazy" />
       </div>
     </div>
   </section>

@@ -1,17 +1,18 @@
 ---
+import { withBase } from '../utils/path'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import PageHero from '../components/PageHero.astro'
 ---
 
 <BaseLayout
-  title="Wood Chipping, Firewood and Mulch — Alderleaf"
+  title="Wood Chipping, Firewood and Mulch â€” Alderleaf"
   description="Wood chipping, firewood processing, and mulch delivery on Haida Gwaii."
   activePage="chips"
   heroImage="/images/20220630_114805.jpg"
 >
   <PageHero image="/images/20220630_114805.jpg">
     <h1 class="hero-heading">Wood-Chipping and Mulch Delivery</h1>
-    <a href="/quote" class="btn-hero-primary mt-8">Request a Free Quote</a>
+    <a href={withBase('/quote')} class="btn-hero-primary mt-8">Request a Free Quote</a>
   </PageHero>
 
   <section class="py-16 lg:py-24">
@@ -21,13 +22,13 @@ import PageHero from '../components/PageHero.astro'
         <div class="section-divider mt-5"></div>
         <p class="mt-6 leading-relaxed">Wood-chips are in high demand locally with there usually being a standing wait list of customers wanting wood-chips delivered. We do charge for a wood chip delivery with pricing based upon the quality, the cubic yard delivered and the distance out of the way to travel if required. We will often say, the best way to acquire a load of wood-chips yourself is to contract us to do some tree-work. Then not only are the wood-chips yours to keep, we can often offer a discount on the job if we can leave them behind for time saved with not handling additional materials. We can also be contracted to chip your brush piles with by-the-job or by-the-hour pricing available.</p>
       </div>
-      <img src="/images/Woodchipping.jpg" alt="Wood chipping in progress" class="rounded-2xl shadow-xl" loading="lazy" />
+      <img src={withBase('/images/Woodchipping.jpg')} alt="Wood chipping in progress" class="rounded-2xl shadow-xl" loading="lazy" />
     </div>
   </section>
 
   <section class="bg-cream py-16 lg:py-24">
     <div class="site-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-      <img src="/images/lawn-sprinklers.jpg" alt="Mulch and landscape materials" class="rounded-2xl shadow-xl" loading="lazy" />
+      <img src={withBase('/images/lawn-sprinklers.jpg')} alt="Mulch and landscape materials" class="rounded-2xl shadow-xl" loading="lazy" />
       <div>
         <h2 class="text-3xl font-normal">Wood chipping / Mulch Sales</h2>
         <div class="section-divider mt-5"></div>

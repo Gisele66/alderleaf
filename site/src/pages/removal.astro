@@ -1,11 +1,12 @@
 ---
+import { withBase } from '../utils/path'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import PageHero from '../components/PageHero.astro'
 ---
 
 <BaseLayout
-  title="Tree Removal — Alderleaf"
-  description="Professional tree removal on Haida Gwaii — safe take-down in limited spaces. Over 25 years in the industry."
+  title="Tree Removal â€” Alderleaf"
+  description="Professional tree removal on Haida Gwaii â€” safe take-down in limited spaces. Over 25 years in the industry."
   activePage="removal"
   heroImage="/images/IMG_5866.jpg"
 >
@@ -13,7 +14,7 @@ import PageHero from '../components/PageHero.astro'
     <p class="hero-eyebrow">Over 25 Years in the industry</p>
     <h1 class="hero-heading mt-3">Tree Removal</h1>
     <p class="hero-lead">From impeding viewscapes to presenting a danger to existing structures, there are many reasons why it may become necessary to completely remove a tree before the end of its lifespan. We have professional experience in a wide-range of tree removal scenarios, with a proven record of safety.</p>
-    <a href="/quote" class="btn-hero-primary mt-8">Request a Free Quote</a>
+    <a href={withBase('/quote')} class="btn-hero-primary mt-8">Request a Free Quote</a>
   </PageHero>
 
   <section class="py-16 lg:py-24">
@@ -24,16 +25,16 @@ import PageHero from '../components/PageHero.astro'
         <p class="mt-6 leading-relaxed">We specialize in the take-down, removal and cleanup of trees when there is limited space and danger to structures or other landscaping. We are equipped with specialized, heavy rigging which allows us to safely cut up and lower limbs and stem pieces in a controlled manner with consideration and protection for your property below. Fully insured and committed to safety, you can enjoy peace-of-mind when Alderleaf is on the job for your tree removal.</p>
       </div>
       <div class="grid grid-cols-2 gap-3">
-        <img src="/images/IMG_5866.jpg" alt="Tree removal work" class="rounded-xl object-cover shadow-md" loading="lazy" />
-        <img src="/images/IMG_5803.jpg" alt="Tree removal on Haida Gwaii" class="rounded-xl object-cover shadow-md" loading="lazy" />
-        <img src="/images/20220630_114805.jpg" alt="Alderleaf crew at work" class="col-span-2 rounded-xl object-cover shadow-md" loading="lazy" />
+        <img src={withBase('/images/IMG_5866.jpg')} alt="Tree removal work" class="rounded-xl object-cover shadow-md" loading="lazy" />
+        <img src={withBase('/images/IMG_5803.jpg')} alt="Tree removal on Haida Gwaii" class="rounded-xl object-cover shadow-md" loading="lazy" />
+        <img src={withBase('/images/20220630_114805.jpg')} alt="Alderleaf crew at work" class="col-span-2 rounded-xl object-cover shadow-md" loading="lazy" />
       </div>
     </div>
   </section>
 
   <section class="bg-cream py-16 lg:py-24">
     <div class="site-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-      <img src="/images/IMG_1966.jpg" alt="Clean-up after tree removal" class="rounded-2xl shadow-xl" loading="lazy" />
+      <img src={withBase('/images/IMG_1966.jpg')} alt="Clean-up after tree removal" class="rounded-2xl shadow-xl" loading="lazy" />
       <div>
         <h2 class="text-3xl font-normal">Moving Materials &amp; Clean-up</h2>
         <div class="section-divider mt-5"></div>
@@ -50,7 +51,7 @@ import PageHero from '../components/PageHero.astro'
           <div class="section-divider mt-5"></div>
           <p class="mt-6 leading-relaxed">Professional assessment of trees by Certified Danger-Tree Assessor with decades of local experience.</p>
         </div>
-        <img src="/images/20221006_093805.jpg" alt="Tree assessment" class="rounded-2xl shadow-xl" loading="lazy" />
+        <img src={withBase('/images/20221006_093805.jpg')} alt="Tree assessment" class="rounded-2xl shadow-xl" loading="lazy" />
       </div>
     </div>
   </section>
@@ -60,12 +61,12 @@ import PageHero from '../components/PageHero.astro'
       <h2 class="text-3xl font-normal text-white">Experience &amp; Certification</h2>
       <div class="mt-5 h-1 w-20 bg-forest-light"></div>
       <ul class="mt-8 grid gap-4 sm:grid-cols-2">
-        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> BC Certified Faller for 25+ years</li>
-        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Professional Arborist and Tree Climber of 22+ years</li>
-        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Certified Wildlife/Danger-Tree Assessor for Parks and Rec.</li>
-        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Level 3 First Aid</li>
-        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Certified in Permaculture Landscape Design</li>
-        <li class="flex items-start gap-2"><span class="text-forest-light">✓</span> Fully-Insured — 5 Million Liability</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">âœ“</span> BC Certified Faller for 25+ years</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">âœ“</span> Professional Arborist and Tree Climber of 22+ years</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">âœ“</span> Certified Wildlife/Danger-Tree Assessor for Parks and Rec.</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">âœ“</span> Level 3 First Aid</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">âœ“</span> Certified in Permaculture Landscape Design</li>
+        <li class="flex items-start gap-2"><span class="text-forest-light">âœ“</span> Fully-Insured â€” 5 Million Liability</li>
       </ul>
     </div>
   </section>

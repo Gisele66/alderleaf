@@ -1,8 +1,12 @@
+---
+import { mainNav } from '../data/nav'
+import { withBase } from '../utils/path'
+---
 <footer class="bg-forest-dark text-white">
   <div class="site-container py-14">
     <div class="grid gap-10 lg:grid-cols-3 lg:items-start">
       <div>
-        <img src="/images/Artboard-1@2x.png" alt="Alderleaf" class="h-14 w-auto brightness-0 invert" width="200" height="58" />
+        <img src={withBase('/images/Artboard-1@2x.png')} alt="Alderleaf" class="h-14 w-auto brightness-0 invert" width="200" height="58" />
         <p class="mt-4 pl-2 italic text-forest-light"><strong>"When experience matters!"</strong></p>
       </div>
       <nav aria-label="Contact details" class="lg:justify-self-center lg:text-center">
@@ -15,10 +19,9 @@
       </nav>
       <nav aria-label="Company" class="lg:justify-self-end lg:text-right">
         <ul class="space-y-2 text-white/85">
-          <li><a href="/" class="hover:text-white">Home</a></li>
-          <li><a href="/services" class="hover:text-white">Services</a></li>
-          <li><a href="/about" class="hover:text-white">About Us</a></li>
-          <li><a href="/contact" class="hover:text-white">Contact Us</a></li>
+          {mainNav.map((item) => (
+            <li><a href={item.href} class="hover:text-white">{item.label}</a></li>
+          ))}
         </ul>
       </nav>
     </div>

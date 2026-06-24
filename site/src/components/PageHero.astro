@@ -1,16 +1,13 @@
 ---
-interface Props {
-  image: string
-  imageClass?: string
-  containerClass?: string
-}
+import { withBase } from '../utils/path'
 
 const { image, imageClass = '', containerClass = '' } = Astro.props
+const imageSrc = image.startsWith('http') ? image : withBase(image)
 ---
 
 <section class="page-hero relative overflow-hidden">
   <img
-    src={image}
+    src={imageSrc}
     alt=""
     class:list={['absolute inset-0 h-full w-full object-cover', imageClass]}
     loading="eager"
